@@ -1,0 +1,34 @@
+:root {
+  font-family: Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  --beige-light: #f5f5dc;
+  --beige-medium: #e6e6d1;
+  --beige-dark: #d2d2b4;
+  --green-light: #d8e2dc;
+  --green-medium: #a3b899;
+  --green-dark: #5a7247;
+  --text-dark:rgb(71, 47, 47);
+  --text-light: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--beige-light);
+  color: var(--text-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --beige-light: #3a3a32;
+    --beige-medium: #4a4a40;
+    --beige-dark: #5a5a4e;
+    --green-dark: #a3b899;
+    --green-medium: #5a7247;
+    --text-dark: #f8f8f8;
+    --text-light: #333333;
+  }
+}
